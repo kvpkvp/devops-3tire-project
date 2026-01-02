@@ -1,0 +1,12 @@
+CREATE DATABASE devopsdb;
+USE devopsdb;
+
+CREATE TABLE application_status (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sevice_name VARCHAR  (100),
+    status VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO application_status (service_name, status)
+VALUES ('backend-service', 'UP'); 	
